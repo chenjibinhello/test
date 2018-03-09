@@ -1,7 +1,10 @@
 package com.example.demo.controller;
 
+import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
+import java.util.TreeMap;
 
 import javax.validation.Valid;
 
@@ -28,12 +31,10 @@ public class DemoController {
 	}
 	
 	@RequestMapping("list")
-	public ModelAndView get(ModelAndView modelAndView) {
-		modelAndView.setViewName("index");
-		
-		Map<String, String> list = new HashMap<String, String>();
-		list.put("1", "壹");
-		list.put("2", "贰");
+	public ModelAndView index(ModelAndView modelAndView) {
+		modelAndView.setViewName("/index");
+		List<String> list = new ArrayList<String>();
+		list.add("1");
 		modelAndView.addObject("list", list);
 		return modelAndView;
 	}
