@@ -15,8 +15,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.servlet.ModelAndView;
 
-import com.example.demo.entity.User;
 import com.example.demo.model.UserModel;
+import com.example.demo.pojo.User;
 import com.example.demo.utils.Md5Util;
 
 @RestController
