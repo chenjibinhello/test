@@ -8,6 +8,8 @@ import java.util.TreeMap;
 
 import javax.validation.Valid;
 
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -32,7 +34,7 @@ public class DemoController {
 	
 	@RequestMapping("list")
 	public ModelAndView index(ModelAndView modelAndView) {
-		modelAndView.setViewName("/index");
+		modelAndView.setViewName("index");
 		List<String> list = new ArrayList<String>();
 		list.add("1");
 		modelAndView.addObject("list", list);
