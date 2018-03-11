@@ -1,7 +1,8 @@
 package com.example.demo.dao;
 
-import com.example.demo.pojo.ErpPurchaseMaterialReviseBills;
 import java.util.List;
+
+import com.example.demo.bean.po.ErpPurchaseMaterialReviseBills;
 
 public interface ErpPurchaseMaterialReviseBillsMapper {
     /**

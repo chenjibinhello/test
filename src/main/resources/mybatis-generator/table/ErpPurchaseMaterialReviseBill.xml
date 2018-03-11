@@ -1,7 +1,0 @@
-<table tableName="erp_purchase_material_revise_bills" enableCountByExample="true"
-	enableUpdateByExample="true" enableDeleteByExample="true"
-	enableSelectByExample="true" selectByExampleQueryId="true">
-	<property name="useActualColumnNames" value="false" />
-	<!-- 数据库表主键 -->
-	<generatedKey column="material_revise_bill_id" sqlStatement="Mysql" identity="true" />
-</table>
